@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-LABEL maintainer="Zimovnov Andrey <zimovnov@gmail.com>"
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+LABEL maintainer="Unknown Pidor <ssanya.markelov@gmail.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # install apt packages

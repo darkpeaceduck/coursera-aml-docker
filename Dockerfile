@@ -18,7 +18,8 @@ RUN jupyter nbextension enable codefolding/main
 RUN echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.port = 8080" >> /root/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.token = ''" >> /root/.jupyter/jupyter_notebook_config.py
+RUN mkdir -p /vol
 
 WORKDIR /root
 EXPOSE 8080
-CMD ["jupyter", "notebook", "--no-browser", "--allow-root"]
+CMD ["jupyter", "notebook", "--no-browser", "--allow-root", "--notebook-dir=/vol"]

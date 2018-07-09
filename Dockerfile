@@ -1,5 +1,5 @@
-FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
-LABEL maintainer="Unknown Pidor <ssanya.markelov@gmail.com>"
+FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
+LABEL maintainer="AA <BB@gmail.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # install apt packages
